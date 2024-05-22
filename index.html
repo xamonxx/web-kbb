@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html data-theme="bumblebee">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          dropShadow: {
+            '3xl': '0 35px 35px rgb(255 217 0),
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<style type="">
+  .hero-content {
+      margin-top: -220px;
+    }
+    .header-img {
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .header-img {
+    top: 0;
+    bottom: auto;
+  }
+}
+
+}
+  </style>
+
+<body class="">
+  <!-- start nabar -->
+  <nav class="fixed top-0 z-50 w-full bg-white">
+    <div class="max-w-1xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <img src="../img/icon/Kab_Bandung_Barat.svg" alt="Logo" width="40px" class="mr-2 hidden md:block" />
+          <a href="https://www.google.co.id/?hl=id" class="text-2xl font-extrabold"> </a>
+        </div>
+        <div class="dropdown md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#">Homepage</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:flex items-center font-semibold text-md md:ml-auto space-x-4 text-gray-900">
+          <a href="#" class="py-2 px-5 text-slate-800 bg-[#ffd900] rounded-full">Home</a>
+          <a href="#about" class="py-2 px-5  hover:ring-1 hover:ring-[#ffd900]  rounded-full">About</a>
+          <a href="#" class="py-2 px-5 hover:ring-1 hover:ring-[#ffd900]  rounded-full">Contact</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- end navbar -->
+
+  <!-- start content -->
+  <section id="about" class="min-h-screen bg-center relative">
+    <img src="../img/img-card/header.png" alt="" class="header-img absolute w-full " />
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center min-h-screen">
+      <div class="flex-1 flex justify-center lg:justify-end">
+        <img src="../img/pj_bupati2023_01.png" class="max-w-xs lg:max-w-sm mt-10 lg:mt-0 drop-shadow-2xl shadow-white"
+          style="z-index: 2" />
+      </div>
+      <div class="flex-1 text-center lg:text-left p-5 lg:p-10 z-10">
+        <h1 class="text-4xl font-bold mt-5">Bandung Barat Senyum</h1>
+        <p class="py-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, illum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+          quia eum molestias quos quam maxime, hic molestiae aliquam at
+          tempora
+        </p>
+        <button class="btn btn-primary font-bold">Details</button>
+      </div>
+    </div>
+  </section>
+  <!-- end content -->
+
+  <!-- start hero -->
+  <section id="about" class="min-h-screen bg-slate-500 flex items-center justify-center">
+    <div class="text-center text-white">
+      <div class="max-w-md mx-auto">
+        <h1 class="text-5xl font-bold mb-12 border-b-4 rounded-xl mt-32">Portal Menu</h1>
+      </div>
+      <div class="menu grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center mt-16">
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Website</h1>
+          <a href="#website-link">
+            <img src="../img/icon/website.svg" alt="Website" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Profil Daerah</h1>
+          <a href="#profil-daerah-link">
+            <img src="../img/icon/Profile Daerah.svg" alt="Profil Daerah" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Sarana Prasarana</h1>
+          <a href="#sarana-prasarana-link">
+            <img src="../img/icon/sarana prasarana.svg" alt="Sarana Prasarana" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Warta Berita</h1>
+          <a href="#warta-berita-link">
+            <img src="../img/icon/Warta Berita.svg" alt="Warta Berita" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Layanan Publik</h1>
+          <a href="#layanan-publik-link">
+            <img src="../img/icon/Layanan Publik.svg" alt="Layanan Publik" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Icon Wisata</h1>
+          <a href="#icon-wisata-link">
+            <img src="../img/icon/icon wisata.svg" alt="Icon Wisata" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Layanan Data</h1>
+          <a href="#layanan-data-link">
+            <img src="../img/icon/layanan data.svg" alt="Layanan Data" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+        <div class="text-xl group cursor-pointer">
+          <h1
+            class="font-semibold group-hover:bg-yellow-400 group-hover:text-black shadow-xl py-2 rounded-full px-4 transition-colors duration-200">
+            Informasi Publik</h1>
+          <a href="#informasi-publik-link">
+            <img src="../img/icon/website.svg" alt="Informasi Publik" width="150px"
+              class="hover:scale-110 hover:drop-shadow-2xl transition-transform duration-200 m-10 group" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end hero  -->
+
+  <!-- start Berita -->
+  <section class="min-h-screen bg-slate-700 flex items-center justify-center mb-40">
+    <div class="text-center text-white">
+      <div class="max-w-md mx-auto ">
+        <h1 class="text-5xl font-bold mb-12 border-b-4 rounded-xl mt-32">
+          Berita Terbaru
+        </h1>
+      </div>
+      <div class="menu grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 justify-items-center">
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card1 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/1713453031.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Pemerintahan
+                <div class="badge badge-secondary">18 April 2024</div>
+              </h2>
+              <p class="text-left text-base">Pemkab Bandung Barat Gelar Musrenbang, Pj Bupati Bandung Barat Harapkan
+                Bandung Barat Semakin Baik
+                Pemerintah Kabupaten Bandung Barat melaksanakan kegiatan Musyawarah Perencanaan Pembangunan (MUSR).</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Politik</div>
+                <div class="badge badge-outline">Pejabat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card2 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/Longsor.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Longsor
+                <div class="badge badge-secondary">27 Maret 2024</div>
+              </h2>
+              <p class="text-left text-base">
+                Longsor Dan Banjir Di Bandung Barat, Pemda KBB Terapkan Tanggap Darurat Bencana Selama Dua Pekan.<br>
+                <span class="font-bold">BANDUNG BARAT -</span> Bencana banjir bandang menerjang pemukiman dan
+                persawahan.
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Bencana</div>
+                <div class="badge badge-outline">Bandung Barat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card3 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/Banjir.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Banjir
+                <div class="badge badge-secondary">27 Maret 2024</div>
+              </h2>
+              <p class="text-left text-base">Banjir Bandang Di Desa Nyalindung, Pemkab Bandung Barat Siapkan Respons
+                Cepat<br>
+                <span class="font-bold">BANDUNG BARAT - </span> Bencana banjir bandang yang melanda Desa Nyalindung.
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Bencana Alam</div>
+                <div class="badge badge-outline">Bandung Barat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card4 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/Pemerintahan.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Pemerinatahan
+                <div class="badge badge-secondary">19 Febuari 2024</div>
+              </h2>
+              <p class="text-left text-base">
+                PJ Bupati Bandung Barat, Arsan Latif Raih Penghargaan Dirjen Dukcapil Untuk Terobosan Perekaman E-KTP
+                Pj Bupati Bandung Barat, Arsan Latif mendapatkan penghargaan dari Dirjen Dukcapil terkait terobos</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Pemerintahan</div>
+                <div class="badge badge-outline">Bandung Barat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card5 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/pergeseran tanah.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Peristiwa
+                <div class="badge badge-secondary">01 Maret 2024</div>
+              </h2>
+              <p class="text-left text-base">PJ Bupati Bandung Barat Bergerak Cepat Koordinasi Dengan BNPB Terkait
+                Lokasi Pergerakan Tanah Di Kecamatan Rongga
+                Pasca meninjau kondisi lokasi pergerakan tanah di Kampung Cigombong, Desa Cibedug, Kecamatan Rong</p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Bencana Alam</div>
+                <div class="badge badge-outline">Bandung Barat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xl group mx-5 mb-10 mt-16 cursor-pointer">
+          <!-- card6 -->
+          <div
+            class="card w-96 hover:bg-slate-100 hover:ring-2 hover:ring-[#ffd900] shadow-sm hover:shadow-[#ffd900] bg-base-100 shadow-xl text-black">
+            <figure><img src="../img/img-card/pemerintahan2.jpg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-bold">
+                Pemerintahan
+                <div class="badge badge-secondary">6 Maret 2024 </div>
+              </h2>
+              <p class="text-left text-base">
+                Mendorong Hilirisasi Hortikultura, Kabupaten Bandung Barat Luncurkan Pilot Project Kemitraan Closed
+                Loop.
+              </p>
+              <div class="card-actions justify-end">
+                <div class="badge badge-outline">Politik</div>
+                <div class="badge badge-outline">pejabat</div>
+              </div>
+            </div>
+          </div>
+          <!-- end card -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end Berita -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</body>
+
+</html>
